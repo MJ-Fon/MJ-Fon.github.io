@@ -144,6 +144,7 @@ body{
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 10%;
+  border-bottom: none;
 }
 .bottom-line{
   border-bottom: 6px dotted brown;
