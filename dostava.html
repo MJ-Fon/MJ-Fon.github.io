@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dostava</title>
+    <link rel="stylesheet" href="styles/styleD.css">
+
+</head>
+<body>
+    <div class="header"> 
+        <nav class="nav">
+            <a class="colorit" href="index.html">Pocetna</a>
+            <a class="colorit" href="rezervacija.html">Rezervacija</a>
+            <a class="colorit" href="dostava.html">Dostava</a>
+            <a class="colorit" href="galerija.html">Galerija</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content-large">
+            <form id="form1" onsubmit="return validate()">
+                <label for="ime"> Ime i Prezime</label>
+                <input type="text" name="ime" maxlength="30" id="naming">
+                <br>
+                <label for="mejl">Email</label>
+                <input type="email" name="mejl" id="mejl">
+                <br>
+                <label for="telefon"> Telefon</label>
+                <input type="tel" name="telefon" id="telefon">
+                <br>
+                <label for="adresa">Adresa</label>
+                <input type="text" name="adresa" id="adresa">
+                <br>
+                <label for="vreme">Vreme</label>
+                <input type="time" name="vreme" id="vreme">
+                <br>
+                <br>
+                <label for="meni">Izbor hrane:</label>
+                <select name="meni" id="meni">
+                    <option>1.Pizza</option>
+                    <option>2.Lazanje</option>
+                    <option>3.Pasta</option>
+                    <option>4.Cezar Salata</option>
+                </select>
+                <br>
+                <br>
+                <label for="dostava">Dostavljac</label>
+                <select name="dostava" id="dostava">
+                    <option>Wolt</option>
+                    <option>Donesi</option>
+                    <option>Glovo</option>
+                </select>
+                <br>
+                <br>
+                <p>Sa priborom? </p>
+                <div class="radB">
+                <label for="pNE">Ne</label>
+                <input type="radio" name="pribor" id="pNE">
+                <label for="pDA">Da</label>
+                <input type="radio" id="pDA" name="pribor">
+                <br>
+                
+            </div>
+                </form>
+                <button type="submit"  form="form1" class="kraj" >Uredu</button>
+        </div>
+       
+        
+        <!-- <div class="footer">contetn 3</div> -->
+        
+        
+        
+        
+    </div>
+    <div class="footer"><a href="https://www.facebook.com/">
+        <img src="img/icon-fb.png" class="social-icons"></a>
+     <a href="https://www.instagram.com">
+        <img src="img/icon-ig.png" class="social-icons"></a>
+    <a href="https://www.twitter.com/">
+            <img src="img/icon-tw.png" class="social-icons"></a>
+    </div>
+    <script>
+        function validate(){
+            var name = document.getElementById("naming");
+            var mail = document.getElementById("mejl");
+            var tel = document.getElementById("telefon");
+            var adress = document.getElementById("adresa");
+            var time = document.getElementById("vreme");
+            var menu = document.getElementById("meni");
+          
+            
+
+            if(name.value.trim() == "" || mail.value.trim() =="" || tel.value.trim() == "" || adress.value ==""
+        || time.value =="" || menu.value ==""){
+                alert("Popunite sva polja!");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+
+    
+    
+</body>
+</html>

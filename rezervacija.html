@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija</title>
+    <link rel="stylesheet" href="styles/styleR.css">
+</head>
+<body>
+    <div class="header"> 
+        <nav class="nav">
+            <a class="colorit" href="index.html">Pocetna</a>
+            <a class="colorit" href="rezervacija.html">Rezervacija</a>
+            <a class="colorit" href="dostava.html">Dostava</a>
+            <a class="colorit" href="galerija.html">Galerija</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content-large">
+            <form onsubmit="validate()" id="form2">
+            <label for="ime"> Ime i Prezime</label>
+            <input type="text" name="ime" maxlength="30" id="naming">
+            <br>
+            <label for="mejl">Email</label>
+            <input type="email" name="mejl" id="mejl">
+            <br>
+            <label for="telefon"> Telefon</label>
+            <input type="tel" name="telefon" id="telefon">
+            <br>
+            <label for="vreme">Vreme</label>
+            <input type="time" name="vreme" id="vreme">
+            <label for="datum">Datum</label>
+            <input type="date" name="datum" id="datum">
+            <br>
+            <br>
+            <label for="mesto">Izaberite zeljenu lokaciju</label>
+            <select name="mesto" id="mesto">
+                <option>Terasa</option>
+                <option>Unutrasnjost</option>
+                <option>Bar</option>
+                <option>Basta</option>
+            </select>
+            <br>
+            <br>
+            <label for="napomena">Napomena</label>
+            <textarea name="napomena"></textarea>
+            <button type="submit" class="kraj" form="form2"> Uredu</button>
+            
+            </form>
+            <p id="tekstR"></p>
+
+        </div>
+        
+        <!-- <div class="footer">contetn 3</div> -->
+        
+        
+        
+        
+    </div>
+    <div class="footer"><a href="https://www.facebook.com/">
+        <img src="img/icon-fb.png" class="social-icons"></a>
+     <a href="https://www.instagram.com">
+        <img src="img/icon-ig.png" class="social-icons"></a>
+    <a href="https://www.twitter.com/">
+            <img src="img/icon-tw.png" class="social-icons"></a></div>
+            <script>
+                function validate(){
+                    var txt = document.getElementById("tekstR");
+                    var name = document.getElementById("naming");
+                    var mail = document.getElementById("mejl");
+                    var date = document.getElementById("datum");
+                    var tel = document.getElementById("telefon");
+                    var time = document.getElementById("vreme");
+                    var place = document.getElementById("mestp");
+                  
+                    
+        
+                    if(name.value.trim() == "" || mail.value.trim() =="" || tel.value.trim() == "" 
+                || time.value =="" || date.value=="" || place.value ==""){
+                        alert("Popunite sva polja!");
+                        
+                        return false;
+                    }else{
+                        alert("Vasa rezervacija je evidentirana");
+                        return true;
+                        
+                    }
+                    
+                }
+            </script>
+    
+</body>
+</html>

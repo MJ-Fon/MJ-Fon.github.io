@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    background-image: url(../img/bg.jpg);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  50px 1fr 1fr 100px;
+    gap: 10px;
+    padding: 10px;
+
+    box-sizing: border-box;
+    
+}
+.container div{
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+/* .header{
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    background-color: rgb(2, 5, 36);
+} */
+.header {
+    background: blanchedalmond;
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    grid-column-start: 1 ;
+    grid-column-end: auto;
+    border: double burlywood;
+    box-shadow: 5px 5px 15px
+    
+  }
+  .header:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    background: blanchedalmond url(../img/logo.jpg) center / cover;
+    border: 10px solid white;
+    
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: -50px;
+    border: double burlywood;
+    
+  }
+  a.colorit:link {
+    text-decoration: none;
+    color: black;
+    font-family: "Lucida handwriting", "Courier New", monospace;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  a.colorit:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a.colorit:hover {
+    text-decoration: none;
+    color: brown;
+  }
+  
+  a.colorit:active {
+    text-decoration: underline;
+  }
+.content-large{
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blanchedalmond;
+    border: 1px burlywood ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px; 
+    font-family: "Lucida handwriting", "Courier New", monospace;
+    text-align: center;
+    box-shadow: inset 0px 0px 20px 10px burlywood, 3px 3px 20px black;
+    border-radius: 20%;
+}
+.content-large h1{
+  color: brown;
+  height: 100px;
+  text-shadow: 2px 2px 10px burlywood;
+}
+.content-small1{
+    
+    /* background-attachment: fixed; */
+    
+    width: auto;
+    height: auto;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid black;
+    object-fit: cover;
+    border-radius: 10%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 3px 20px black;
+    
+
+}
+.content-small{
+    width: auto;
+    height: auto;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: blanchedalmond;
+    border: 1px solid black ;
+    /* background-image: url(img/salata-1.jpg); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 3px 3px 20px black;
+    
+
+}
+
+.footer{
+    height: 50px;
+    margin-top: -50px;
+    
+
+    
+    background-color: burlywood;
+    border-top: double blanchedalmond 7px;
+}
+.nav{
+    font-size: 90%;
+}
+.menu-line{
+  border-top: 6px dotted brown;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.bottom-line{
+  border-bottom: 6px dotted brown;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.social-icons{
+  width: 16px;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
